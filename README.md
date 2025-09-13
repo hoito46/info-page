@@ -4,13 +4,13 @@
 > The site is accessible via https://hoito46.github.io/info-page/   
 > 
 > This is a **personal website** created by **me**.   
-> The purpose includes improving my front-end skills, using this website as a unique CV, and trying to make an interactive comment connect with TG via n8n.
+> The purpose includes improving my front-end skills, using this website as a unique CV, and trying to make an interactive comment connect with TG.
 
 # Overview
 > <i>**About Me:** Brief introduction of myself (will be updated within the next few days)    
 > **Project:** Link and brief description (will be updated continuously and may not necessarily be on GitHub)   
 > **Blogs:** The initial plan is to take notes and upload some insights   
-> **Comment:** A textarea that can collect user input and send it to me via n8n   
+> **Comment:** A textarea that can collect user input and send it to me   
 > **Contact:** The way to find and contact me is better via **email**, but not via Discord or IG
 
 # Skills
@@ -22,6 +22,7 @@
 
 # Log(s)
 > **1.0:** Initial at 14/9/2025
+> **1.1:** Delete n8n issues as **Render** fk up, change it to **Pipedream + Webhook**
 
 # Others
 > "Learning is not confined to studying but is driven by curiosity."   
