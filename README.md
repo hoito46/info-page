@@ -21,7 +21,7 @@
 > **GitHub Pages:** **Static** site hosting and deployment, so **no Python, no DBMS, no Node.js**
 
 # Log(s)
-> **1.0:** Initial at 14/9/2025
+> **1.0:** Initial at 14/9/2025   
 > **1.1:** Delete n8n issues as **Render** fk up, change it to **Pipedream + Webhook**
 
 # Others
