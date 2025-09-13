@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+  <meta charset="UTF-8">
+  <title>個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="dog.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="topleft">
+        <div class="icon">
+          <img src="dog.jpg" alt="Profile Picture" class="pic">
+        </div>
+        <h1>146的個人網頁</h1>
+      </div>
+
+      <div class="topright">
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="scroll">
+    <p>Learning is not confined to studying but is driven by curiosity.</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About me</h2>
+    <p>I'm an 18-year-old aspiring IT professional pursuing an Associate degree in Information Technology.</p>
+  </div>
+
+  <div class="section" id="projects">
+    <h2>Project</h2>
+    <ul>
+      <li><strong>Project 1(JAVA GUI): </strong><a href="https://github.com/hoito46/Simple-Java-Calculator"
+          target="_blank">Simple-Java-Calculator</a> (download to use)</li>
+      <li><strong>Project 2(C++): </strong><a href="https://github.com/hoito46/Computer-Programming-Group-Project"
+          target="_blank">SEHH2042 Group-Project</a> (download to use)</li>
+    </ul>
+  </div>
+
+  <div class="section" id="blog">
+    <h2>Blogs</h2>
+  </div>
+
+  <div class="section" id="commentpage">
+    <h2>Comments</h2>
+    <form id="commentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="3" required></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:to@example.com?subject=查詢&body=你好，我想了解更多關於...">lamto087@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/hoi_0146" target="_blank">@hoi_0146</a></p>
+    <p>Discord: <a href="https://discord.com/users/hoi_0146" target="_blank">hoi_0146</a></p>
+    <p>GitHub: <a href="https://github.com/hoito46" target="_blank">hoito46</a></p>
+  </div>
+
+  <footer>
+    <p>© 2025 To. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('commentForm')
+      //things when submit
+      .addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        //get values of 3 parts
+        const send = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          comment: document.getElementById('comment').value
+        };
+
+        //empty
+        if (!send.name || !send.email || !send.comment) {
+          alert('Please Fill In All Fields');
+          return;
+        }
+
+        //if T/F
+        try {
+          const abc = await fetch('https://n8n-to.onrender.com/webhook/cm', {
+            method: 'POST',
+            //clarify the type, error at 13/9
+            headers: { 'Content-Type': 'application/json' },
+            //change to json, needed
+            body: JSON.stringify(send)
+          });
+ 
+        if (abc.ok) {
+            alert('Send Successfully!');
+            this.reset();
+          } 
+
+        else {
+            alert('Try Again');
+          }
+        }
+
+        //error
+        catch (err) {
+          alert('An Error Existed!');
+          console.error(err);
+        }
+      });
+
+  </script>
+</body>
+
+</html>
