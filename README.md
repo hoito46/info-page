@@ -22,7 +22,7 @@
 
 # Log(s)
 > **1.0:** Initial     
-> **1.1:** Delete n8n issues as **Render** fk up, change it to **Pipedream + Webhook**
+> **1.1:** Delete n8n as **Render** fk up, change it to **Pipedream + Webhook**
 
 # Others
 > "Learning is not confined to studying but is driven by curiosity."   
