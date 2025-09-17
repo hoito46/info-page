@@ -17,12 +17,12 @@
 > **HTML5:** Obviously, for the whole structure and layout  
 > **CSS:** Styling (the responsive design is not yet complete, but I will follow up in the future)   
 > **JAVASCRIPT:** Form and Webhook  
-> **n8n Workflow:** Get the user's comment and push it to TG  
+> **Automation Workflow Platform:** Get the user's comment and push it to TG  
 > **GitHub Pages:** **Static** site hosting and deployment, so **no Python, no DBMS, no Node.js**
 
 # Log(s)
 > **1.0:** Initial     
-> **1.1:** Delete n8n as **Render** fk up, change it to **Pipedream + Webhook**
+> **1.1:** Use **Pipedream + Webhook** as **Render** fk up
 
 # Others
 > "Learning is not confined to studying but is driven by curiosity."   
